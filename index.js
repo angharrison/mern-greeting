@@ -11,6 +11,8 @@ app.set('port', process.env.PORT || 3003)
 app.use(parser.json())
 app.use(cors())
 
+app.use(require('./routes.js'))
+
 app.get('/api/translations', (req, res) => {
   Translation.find()
     .then((translations) => {
