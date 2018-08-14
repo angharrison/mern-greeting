@@ -3,7 +3,7 @@ const router = express.Router()
 const controller = require('./controller.js')
 
 //Create a new letter
-router.get('/new', controller.create)
+router.post('/create', controller.create)
 
 //read
 router.get('/', controller.index)
