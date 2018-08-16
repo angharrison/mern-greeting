@@ -1,8 +1,7 @@
 const express = require('express')
 const parser = require('body-parser')
-const mongoose = require('./db/seeds.js')
 const cors = require('cors')
-// const GreetingCard = mongoose.model('GreetingCard')
+// const InspirationQuote = mongoose.model('InspirationQuote')
 
 const app = express()
 

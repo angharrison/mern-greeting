@@ -1,9 +1,9 @@
-const GreetingCard = require('./db/models.js')
+const InspirationQuote= require('./db/models.js')
 
 module.exports = {
   index: (req,res) => {
     //want to populate homepage with backend data
-    GreetingCard.find()
+    InspirationQuote.find()
     .then((test)=> console.log(test))
   },
     new: (req, res) => {

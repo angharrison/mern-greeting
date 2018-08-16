@@ -2,13 +2,13 @@ const express = require('express')
 const router = express.Router()
 const controller = require('./controller.js')
 
-//Create a new letter
+
 router.post('/create', controller.create)
 
 //read
 router.get('/', controller.index)
 
-//render form to create a new card, gives us a form
+//render form to create a new 
 router.get('/new', controller.new)
 
 //update
